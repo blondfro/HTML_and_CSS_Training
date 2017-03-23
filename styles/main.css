@@ -1,0 +1,328 @@
+
+/*---------------------------------------------------
+                COLOR GUIDE
+
+GOLD:   rgb(172, 140, 71)
+WHITE:  rgb(226, 226, 226)
+GREY:   rgb(128,128,128)
+BLACK:  rgb(15,15,15)
+        rgba(15,15,15, 0.74)
+
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+                GLOBAL STYLES
+---------------------------------------------------*/
+
+body {
+    font-size: 19px;
+    font-family: 'Alegreya SC', serif, 'Alegreya Sans', sans-serif, calibri, candara, "segoe UI", Optima, arial, sans-serif;
+    color: rgb(226,226,226);
+    background-color: rgb(15,15,15);
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 6% 6% 6%;
+}
+
+@media screen and (min-width: 750px){
+    body {
+        font-size: 1.4em;
+    }
+}
+
+.container {
+    background: rgb(15,15,15) /* IE8 */;
+    background: rgba(15,15,15,0.74) /* all other browsers*/;
+    padding: 30px;
+}
+
+h1, h2, h3{
+    font-family: "alegreya sc", Garamond, "Basekerville Old Face",  "times new roman", serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.3685em;
+    line-height: 1.2656em;
+    margin-top: 0.4219em;
+    margin-bottom: 0;
+    color: rgb(172, 140, 71);
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.25558em;
+    margin: 0.4219em auto 0.4219em auto;
+}
+
+h3 {
+    font-size: 1.5263em;
+    font-weight: normal;
+    line-height: 1.8621em;
+    margin-top: 0.9310em;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4211em;
+    margin-top: 1.4211em;
+    margin-bottom: 1.4211em;
+    font-weight: 100;
+    max-width: 700px;
+}
+
+li {
+    font-weight: 100;
+}
+
+img {
+    width: 100%;
+}
+
+a:link {
+    color: rgb(172,140,71);
+}
+
+a:visited {
+    color: rgb(101, 86, 52);
+}
+
+a:hover {
+    color: rgb(211, 172, 87);
+}
+
+a:active {
+    color: rgb(229, 207, 159);
+}
+
+.button {
+    background: rgb(172, 140, 71);
+    border-radius: 8px;
+    max-width: 250px;
+}
+
+    .button a {
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        font-style: normal;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .button a:hover {
+        background: rgb(96, 79, 42);
+        border-radius: 8px;
+    }
+
+.featured_info h3 {
+    border-bottom: 1px solid rgb(128,128,128);
+}
+
+.featured_info p {
+    font-style: italic;
+}
+
+.featured_info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (min-width: 1050px) {
+    .featured_info {
+        float: left;
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+.gallery {
+    margin-top: 30px;
+}
+
+    .gallery img{
+        max-width: 500px;
+    }
+
+@media screen and (min-width: 600px) {
+    .gallery {
+        width: 446px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .gallery img {
+        max-width: 220px;
+    }
+} /* media query for image gallery at 600px */
+
+@media screen and (min-width: 1050px) {
+      .gallery {
+        width: 568px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .gallery img {
+        max-width: 280px;
+    }  
+} /* media query for image gallery at 1050px */
+
+@media screen and (min-width: 750px){
+    .landing {
+        text-align: center
+    }
+    
+    .landing p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*---------------------------------------------------
+                LOGO STYLES
+---------------------------------------------------*/
+
+.logo {
+    display: block;
+    width: 150px;
+    margin: 0 auto
+    }
+
+    .logo img {
+    width: 150px; 
+    }
+
+/*---------------------------------------------------
+               MAIN NAVIGATION STYLES
+---------------------------------------------------*/
+
+.main_navigation ul {
+    padding-left: 0;
+}
+
+.main_navigation li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main_navigation a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(67,67,67,0.17);
+    color: rgb(180,180,180);
+}
+
+    .main_navigation a:visited {
+        color: rgb(106,106,106);
+    }
+
+    .main_navigation a:hover {
+        color: rgb(255,255,255);
+        transition: .5s color;
+        background-color: rgba(62, 61, 61, 0.53)
+    }
+    
+    .main_navigation a:active {
+        color: rgb(172,140,71);
+    }
+
+@media screen and (min-width: 750px){
+    .main_navigation {
+        min-height: 100px;
+        border-top: 1px solid rgb(36,36,36);
+        border-bottom: 1px solid rgb(36,36,36);
+    }
+    
+    .main_navigation ul {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    
+    .main_navigation li {
+        float: left;
+        margin-left: 20px;
+        width: 28%;
+    }
+    
+    .main_navigation a {
+        background: none;
+    }
+    
+    .main_navigation a:hover {
+        background: none;
+    }
+        
+ } /* Media query for 750px*/
+
+@media screen and (min-width: 880px){
+    .main_navigation ul {
+        position: relative;
+        right: -30px;
+    }
+} /* Media query for for 880px*/
+/*---------------------------------------------------
+              MENU PAGE STYLES
+---------------------------------------------------*/
+.menu_page .featured_info ul{
+    font-style: italic;
+}
+
+.menu_page .featured_info {
+    float: none;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------------------------------------
+                LOCATION & HOURS PAGE STYLES
+---------------------------------------------------*/
+
+@media screen and (min-width: 1050px){
+    .location_page .featured_info {
+       float: none;
+        width: 100%;
+    }
+    
+    .location_page .landing {
+        float: left;
+        text-align: left;
+        width: 56%;
+    }
+    
+    .location_page .loanding p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .location_page .sidebar {
+        float: right;
+        width: 30%;
+    }
+    
+    
+}
+
+/*---------------------------------------------------
+                GLOBAL FOOTER STYLES
+---------------------------------------------------*/
+
+footer {
+    padding: 10px 0;
+    clear: both;
+}
+
+    footer h4 {
+        text-transform: uppercase;
+    }
+
+    footer p {
+        margin: 0;
+    }
